@@ -10,7 +10,7 @@ export default async function Home() {
       <div className='grid grid-rows-5 grid-flow-row'>
         {
           bairros.map((i) => (
-            <Link href={`/${i.ID_PRODUTO}`}>
+            <Link key={i.ID_PRODUTO} href={`/${i.ID_PRODUTO}`}>
               {i.DS_BAIRRO}
             </Link>
           ))

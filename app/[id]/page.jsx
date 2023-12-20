@@ -32,7 +32,7 @@ export default async function Handler() {
                     {/* TABLE ROW */}
                     {
                         disponiveis.map((i) => (
-                            <div className="  flex flex-row p-2 items-center text-center justify-between text-zinc-950">
+                            <div key={i.ID_PRODUTO} className="  flex flex-row p-2 items-center text-center justify-between text-zinc-950">
                                 <p className=" w-2/6 flex flex-row  items-center text-start justify-start text-zinc-950">{i.NR_QUADRA ? i.NR_QUADRA : "NÃO INFORMADO"}</p>
                                 <p className=" w-2/6 flex flex-row  items-center text-start justify-start text-zinc-950">{i.DS_BLOCO ? i.DS_BLOCO : "NÃO INFORMADO"}</p>
                                 <p>Valor</p>
