@@ -3,7 +3,7 @@ import BuscarInfo from "@/services/BuscarInfo"
 import { useParams } from "next/navigation"
 
 
-export default async function handler() {
+export default async function Handler() {
     const { id } = useParams()
     const data = await BuscarInfo({ id })
 
